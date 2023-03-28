@@ -13,7 +13,7 @@ const AddModel = (props) => {
   let token = localStorage.getItem("accessToken");
   console.log();
   const addContact = () => {
-    const url = "http://localhost:5001/api/contacts";
+    const url = "https://contect-backend-re.onrender.com/api/contacts";
     axios
       .post(url, props.value, {
         headers: {

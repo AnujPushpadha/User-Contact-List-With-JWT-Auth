@@ -25,7 +25,7 @@ const Home = () => {
   const [array, setarray] = useState([]);
   // console.log(array);
   useEffect(() => {
-    const url = "http://localhost:5001/api/contacts";
+    const url = "https://contect-backend-re.onrender.com/api/contacts";
     axios
       .get(url, {
         headers: {

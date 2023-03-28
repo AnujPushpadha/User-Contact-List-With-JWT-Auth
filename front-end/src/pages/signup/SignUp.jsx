@@ -18,7 +18,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = "http://localhost:5001/api/users/register";
+    const url = "https://contect-backend-re.onrender.com/api/users/register";
     axios
       .post(url, data)
       .then((response) => {

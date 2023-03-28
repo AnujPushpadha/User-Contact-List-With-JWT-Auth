@@ -8,9 +8,9 @@ const RouteArray = [
     path: "/",
 
     element: (
-      // <PrivateRoute>
-      <Home />
-      // </PrivateRoute>
+      <PrivateRoute>
+        <Home />
+      </PrivateRoute>
     ),
   },
   {
