@@ -9,9 +9,8 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
 const AddModel = (props) => {
-  console.log(props.value);
   let token = localStorage.getItem("accessToken");
-  console.log();
+
   const addContact = () => {
     const url = "https://contect-backend-re.onrender.com/api/contacts";
     axios
@@ -20,9 +19,7 @@ const AddModel = (props) => {
           Authorization: `Bearer ${token}`,
         },
       })
-      .then((response) => {
-        console.log(response);
-      })
+      .then((response) => {})
       .catch((error) => {
         console.log(error.response.data);
       });
@@ -35,9 +32,7 @@ const AddModel = (props) => {
           Authorization: `Bearer ${token}`,
         },
       })
-      .then((response) => {
-        console.log(response);
-      })
+      .then((response) => {})
       .catch((error) => {
         console.log(error.response.data);
       });

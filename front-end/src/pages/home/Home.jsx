@@ -39,7 +39,7 @@ const Home = () => {
       .catch((error) => {
         console.log(error.response.data);
       });
-  }, []);
+  }, [array]);
   // console.log(array);
   const openAddModel = () => {
     setState({ open: true });
@@ -54,7 +54,7 @@ const Home = () => {
   };
 
   const handleDelete = (_id) => {
-    const url = `http://localhost:5001/api/contacts/${_id}`;
+    const url = `https://contect-backend-re.onrender.com/api/contacts/${_id}`;
     axios
       .delete(url, {
         headers: {
