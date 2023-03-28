@@ -25,7 +25,7 @@ const AddModel = (props) => {
       });
   };
   const editContact = () => {
-    const url = `http://localhost:5001/api/contacts/${props.value.id}`;
+    const url = `https://contect-backend-re.onrender.com/api/contacts/${props.value.id}`;
     axios
       .put(url, props.value, {
         headers: {
